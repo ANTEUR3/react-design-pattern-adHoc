@@ -58,6 +58,14 @@ const GoodComponent = ({ children }) => {
                   options: ["18-23", "24-30", "31-35", ">35"],
                 },
               ],
+              checkboxes: [
+                {
+                  label: "Accept terms and conditions",
+                },
+                {
+                  label: "I'm not robot",
+                },
+              ],
             }}
           >
             {children}

@@ -27,6 +27,7 @@ const BadComponent = () => {
       Country: "",
     },
   });
+console.log(fields);
 
   return (
     <div className="w-1/2">
@@ -39,7 +40,7 @@ const BadComponent = () => {
           onSubmit={form.handleSubmit((values) => console.log(values))}
           className="space-y-4"
         >
-          {fields.map((item) => (
+          {fields.map((item,inedx) => (
             <FormField
               key={item.label}
               control={form.control}
