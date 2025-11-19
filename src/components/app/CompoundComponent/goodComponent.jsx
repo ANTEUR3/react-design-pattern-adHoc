@@ -21,7 +21,7 @@ import { Button } from "@/components/ui/button";
 
 UserContext;
 const GoodComponent = ({ children }) => {
- const form = useForm({
+  const form = useForm({
     defaultValues: {
       UserName: "",
       Email: "",
@@ -30,11 +30,14 @@ const GoodComponent = ({ children }) => {
     },
   });
   return (
-    <div className={"w-50%"}>
-      <h1 className="text-5xl font-bold tracking-tight text-foreground flex gap-x-3 pb-7">
-        <FaCheckCircle className="bg-white text-green-600" />
-        Good Component
-      </h1>
+    <div className={"w-[45%]"}>
+      <div className="w-full justify-center flex">
+        <h1 className="text-5xl font-bold tracking-tight text-foreground flex gap-x-3 pb-7">
+          <FaCheckCircle className="bg-white text-green-600" />
+          Good Component
+        </h1>
+      </div>
+
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit((values) => console.log(values))}
@@ -66,18 +69,29 @@ const GoodComponent = ({ children }) => {
                   label: "I'm not robot",
                 },
               ],
+              textArea: [
+                {
+                  placeholder: "Enter you bio",
+                  label: "Bio",
+                },
+                {
+                  placeholder: "Enter you programming experiences",
+                  label: "Experiences",
+                },
+              ],
             }}
           >
-            {children}
+            <div className="grid grid-cols-2 gap-4 ">{children}</div>
           </UserContext.Provider>
-      
 
-          <Button
-            type="submit"
-            className="px-4 py-2 bg-blue-600 text-white rounded"
-          >
-            Submit
-          </Button>
+          <div className="flex justify-start items-center w-full my-[20px]">
+            <Button
+              type="submit"
+              className="px-4 py-2 bg-blue-600 text-white rounded-md w-1/3  "
+            >
+              Submit
+            </Button>
+          </div>
         </form>
       </Form>
     </div>

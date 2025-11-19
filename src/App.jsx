@@ -8,8 +8,7 @@ import CompoundComponent from './components/app/CompoundComponent/compoundCompon
 function App() {
 
   return (
-    
-       <BrowserRouter>
+<BrowserRouter>
               <Routes>
                 <Route path="/" >
                   <Route path="/" element={<Home/>} />
@@ -22,6 +21,7 @@ function App() {
                 </Route>
               </Routes>
             </BrowserRouter>
+       
  
   )
 }

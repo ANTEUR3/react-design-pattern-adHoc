@@ -33,14 +33,15 @@ const Selects = () => {
             key={item.label}
             control={form.control}
             name={item.label}
+            className={'w-full'}
             render={({ field }) => (
-              <FormItem>
+              <FormItem className={'w-full'}>
                 <FormLabel className={"text-xl"}>{item.label}</FormLabel>
-                <FormControl>
+                <FormControl className={'w-full'}>
                   <NativeSelect className={"w-full"}>
                     {item.options.map((option, index) => {
                       return (
-                        <NativeSelectOption value="">
+                        <NativeSelectOption className={'w-full'} value="">
                           {option}
                         </NativeSelectOption>
                       );

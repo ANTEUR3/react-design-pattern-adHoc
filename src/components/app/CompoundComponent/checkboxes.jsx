@@ -23,7 +23,6 @@ const Checkboxes = () => {
       Country: "",
     },
   });
-  console.log(checkboxes);
   
   return (
     <>
