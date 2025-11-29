@@ -8,7 +8,6 @@ import TextArea from "./textArea";
 const CompoundComponent = () => {
   return (
     <div className=" w-full flex flex-col items-center px-20  ">
-      
       <h1 className="text-8xl font-bold tracking-tight text-foreground">
         Compound Component
       </h1>
@@ -17,8 +16,8 @@ const CompoundComponent = () => {
         <GoodComponent>
           <Inputs/>
           <Selects/>
-          {/* <TextArea/>
-          <Checkboxes/> */}
+          {/* <TextArea/> */}
+          {/* <Checkboxes/> */}
         </GoodComponent>
       </div>
     </div>
