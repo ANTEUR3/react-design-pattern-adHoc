@@ -5,6 +5,7 @@ import { BrowserRouter, Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import Home from './components/app/Home'
 import CompoundComponent from './components/app/CompoundComponent/compoundComponent'
+import { ChildrenComponent } from './components/app/childrenComponent'
 function App() {
 
   return (
@@ -13,6 +14,8 @@ function App() {
                 <Route path="/" >
                   <Route path="/" element={<Home/>} />
                   <Route path="/compoundComponent" element={<CompoundComponent/>} />
+                  <Route path="/childrenComponent" element={<ChildrenComponent/>} />
+
                   <Route path="/admin" element={< ></>}>
                     <Route index element={< ></>} />
                     <Route path="Comments" element={< ></>}/>
