@@ -17,6 +17,10 @@ import {
 } from "@/components/ui/native-select";
 import { fields } from "./data";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Textarea } from "@/components/ui/textarea";
+import { Text } from "lucide-react";
 
 const BadComponent = () => {
   const form = useForm({
@@ -27,7 +31,6 @@ const BadComponent = () => {
       Country: "",
     },
   });
-  console.log(fields);
 
   return (
     <div className="w-[45%]">
@@ -61,7 +64,6 @@ const BadComponent = () => {
                           {...field}
                         />
                       ) : (
-
                         <NativeSelect className={"w-full"}>
                           {item.options.map((option, index) => {
                             return (
@@ -96,3 +98,7 @@ const BadComponent = () => {
 };
 
 export default BadComponent;
+// <Textarea placeholder={item?.placeholder}/>
+//  <div className="flex items-center gap-3">
+//        <Checkbox className={'h-6 w-6'}  id={item.label} />
+//  </div>

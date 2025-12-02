@@ -14,8 +14,8 @@ const CompoundComponent = () => {
       <div className="flex justify-between py-[60px] w-full">
         <BadComponent />
         <GoodComponent>
-          <Inputs/>
           <Selects/>
+          <Inputs/>
           {/* <TextArea/> */}
           {/* <Checkboxes/> */}
         </GoodComponent>

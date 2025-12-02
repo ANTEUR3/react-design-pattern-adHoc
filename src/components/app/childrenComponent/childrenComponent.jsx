@@ -3,9 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 export const ChildrenComponent_=({children})=>{
 
-    const [counter, setCounter] = useState(0);
-    console.log('children component');
-    
+    const [counter, setCounter] = useState(0);    
     return (
         <div className="w-[45%]">
             {children}
